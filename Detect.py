@@ -8,12 +8,12 @@ import requests
 BASE_PATH = os.path.dirname(__file__)
 
 # model weights
-url = 'https://pjreddie.com/media/files/yolov3.weights'
-print('Downloading weights...')
-if 'yolov3.weights' not in os.listdir(BASE_PATH):
-    r = requests.get(url, allow_redirects=True)
-    open('yolov3.weights', 'wb').write(r.content)
-    print('Done')
+# url = 'https://pjreddie.com/media/files/yolov3.weights'
+# print('Downloading weights...')
+# if 'yolov3.weights' not in os.listdir(BASE_PATH):
+#     r = requests.get(url, allow_redirects=True)
+#     open('yolov3.weights', 'wb').write(r.content)
+#     print('Done')
 WEIGHTS = os.path.join(BASE_PATH, 'yolov3.weights')
 
 
